@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Online Voting System</h1>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="voting" style="display:none;">
+            <h2>Cast Your Vote</h2>
+            <form id="vote-form">
+                <div class="candidate">
+                    <img src="BJp.jfif" alt="Candidate 1">
+                    <h3>Candidate 1</h3>
+                    <p>Party: Party A</p>
+                    <input type="radio" id="candidate1" name="candidate" value="Candidate 1" required>
+                    <label for="candidate1">Vote for Candidate 1</label>
+                </div>
+                <div class="candidate">
+                    <img src="Congress.webp" alt="Candidate 2">
+                    <h3>Candidate 2</h3>
+                    <p>Party: Party B</p>
+                    <input type="radio" id="candidate2" name="candidate" value="Candidate 2">
+                    <label for="candidate2">Vote for Candidate 2</label>
+                </div>
+                <div class="candidate">
+                    <img src="brs.jpg" alt="Candidate 2">
+                    <h3>Candidate 3</h3>
+                    <p>Party: Party C</p>
+                    <input type="radio" id="candidate3" name="candidate" value="Candidate 3">
+                    <label for="candidate3">Vote for Candidate 3</label>
+                </div>
+                <div class="candidate">
+                    <img src="Jana.jpg" alt="Candidate 4">
+                    <h3>Candidate 4</h3>
+                    <p>Party: Party D</p>
+                    <input type="radio" id="candidate4" name="candidate" value="Candidate 4">
+                    <label for="candidate4">Vote for Candidate 4</label>
+                </div>
+                <!-- Add more candidates as needed -->
+                <button type="submit">Submit Vote</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
